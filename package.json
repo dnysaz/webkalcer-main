@@ -1,0 +1,15 @@
+{
+  "name": "webkalcer_v2",
+  "version": "1.0.0",
+  "description": "Webkalcer - Jasa Pembuatan Website Profesional Indonesia",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.2",
+    "astro": "^6.4.8"
+  }
+}

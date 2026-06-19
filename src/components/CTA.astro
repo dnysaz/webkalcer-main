@@ -1,0 +1,27 @@
+---
+const {
+  title = 'Siap mulai?',
+  highlight = '',
+  desc = 'Konsultasi gratis, tanpa komitmen.',
+  btnText = 'Hubungi Kami',
+  btnHref = '/#kontak',
+} = Astro.props;
+---
+
+<section class="section-sm" style="border-top:1px solid var(--border);text-align:center;">
+    <div class="container">
+        <div class="reveal reveal-up">
+            <span class="accent-line" style="margin:0 auto 20px;"></span>
+        </div>
+        <h2 class="t-h1 reveal reveal-up d-1" style="margin-bottom:16px;">
+            {title}
+            {highlight ? <span style="color:var(--accent);">{highlight}</span> : null}
+        </h2>
+        <p class="t-body reveal reveal-up d-2" style="max-width:480px;margin:0 auto 32px;">
+            {desc}
+        </p>
+        <div class="reveal reveal-up d-3">
+            <a href={btnHref} class="btn btn-solid">{btnText}</a>
+        </div>
+    </div>
+</section>

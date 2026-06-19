@@ -1,0 +1,506 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout seoPage="home" activeNav="home">
+
+    <!-- HERO -->
+    <section class="section" id="hero" style="display:flex;align-items:center;min-height:100dvh;padding-top:100px;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;right:0;width:52%;height:100%;overflow:hidden;pointer-events:none;" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80&auto=format&fit=crop" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:0.35;">
+            <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 30%,transparent 60%),linear-gradient(180deg,var(--bg) 0%,transparent 25%,transparent 75%,var(--bg) 100%);"></div>
+        </div>
+        <div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0.3;" aria-hidden="true"></div>
+        <div class="container" style="position:relative;z-index:1;">
+            <div style="max-width:820px;">
+                <div class="reveal reveal-up">
+                    <span class="accent-line"></span>
+                    <span style="font-size:0.8rem;font-weight:500;color:var(--fg-2);letter-spacing:0.05em;">Kita bikin website, bukan jual jasa koding <span style="font-size:1rem;">🤙</span></span>
+                </div>
+                <h1 class="t-display reveal reveal-up d-1" style="margin-top:20px;margin-bottom:24px;">
+                    website <span style="color:var(--accent);">webkalcer</span>,<br>
+                    bikin bisnis kamu<br>
+                    <span class="punch">naik kelas</span>
+                </h1>
+                <p class="t-subtitle reveal reveal-up d-2" style="max-width:540px;">
+                    <span class="brand">web</span><span class="brand-a">kalcer</span> bikin website profesional tanpa ribet. Dari desain sampe launching, kami urus semua.
+                </p>
+                <div class="reveal reveal-up d-3" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:40px;">
+                    <a href="#kontak" class="btn btn-solid">Mulai Konsultasi</a>
+                    <a href="#layanan" class="btn btn-ghost">Lihat Layanan</a>
+                </div>
+                <div class="reveal reveal-up d-4" style="display:flex;gap:40px;margin-top:64px;">
+                    <div>
+                        <div style="font-size:1.75rem;font-weight:800;color:var(--fg);">50+</div>
+                        <div class="t-small">Proyek selesai</div>
+                    </div>
+                    <div>
+                        <div style="font-size:1.75rem;font-weight:800;color:var(--fg);">98%</div>
+                        <div class="t-small">Klien puas</div>
+                    </div>
+                    <div>
+                        <div style="font-size:1.75rem;font-weight:800;color:var(--fg);">3+</div>
+                        <div class="t-small">Tahun pengalaman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="section-sm" id="layanan" style="border-top:1px solid var(--border);">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+                <div class="reveal reveal-up">
+                    <span class="accent-line"></span>
+                    <h2 class="t-h1" style="margin-bottom:16px;">Layanan yang<br>tepat sasaran.</h2>
+                    <p class="t-subtitle">Bukan template. Setiap website kami rancang dari nol sesuai kebutuhan bisnis dan karakter brand kamu. Pilih layanan yang paling cocok, atau diskusi dulu - kami bantu tentuin.</p>
+                </div>
+                <div>
+                    <div class="reveal reveal-up" style="padding:24px 0;border-bottom:1px solid var(--border);display:flex;gap:20px;align-items:flex-start;">
+                        <div style="width:40px;height:40px;border-radius:var(--radius);background:var(--accent-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M5 3l14 9-14 9V3z"/></svg>
+                        </div>
+                        <div style="flex:1;">
+                            <h3 class="t-h3">Landing Page</h3>
+                            <p class="t-small" style="margin-top:4px;">Halaman satu halaman yang fokus banget ke konversi — cocok buat campaign, produk baru, atau personal branding. Desainnya clean, loadingnya cepet, dan bikin pengunjung langsung action.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-1" style="padding:24px 0;border-bottom:1px solid var(--border);display:flex;gap:20px;align-items:flex-start;">
+                        <div style="width:40px;height:40px;border-radius:var(--radius);background:var(--accent-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg>
+                        </div>
+                        <div style="flex:1;">
+                            <h3 class="t-h3">Company Profile</h3>
+                            <p class="t-small" style="margin-top:4px;">Website multi-halaman yang narikin cerita brand kamu secara profesional — dari visi misi, portfolio, sampai tim. Biar calon klien percaya dan yakin pilih kamu.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-2" style="padding:24px 0;border-bottom:1px solid var(--border);display:flex;gap:20px;align-items:flex-start;">
+                        <div style="width:40px;height:40px;border-radius:var(--radius);background:var(--accent-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+                        </div>
+                        <div style="flex:1;">
+                            <h3 class="t-h3">Toko Online</h3>
+                            <p class="t-small" style="margin-top:4px;">E-commerce siap pakai dengan payment gateway, manajemen stok, dan dashboard admin. Pelanggan bisa belanja langsung, kamu tinggal terima order — urusan teknis biar kami yang urus.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-3" style="padding:24px 0;display:flex;gap:20px;align-items:flex-start;">
+                        <div style="width:40px;height:40px;border-radius:var(--radius);background:var(--accent-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div style="flex:1;">
+                            <h3 class="t-h3">UI/UX Design</h3>
+                            <p class="t-small" style="margin-top:4px;">Desain antarmuka yang intuitif dan engaging — mulai dari wireframe, prototipe, sampai visual final. Cocok buat kamu yang butuh fondasi desain yang mateng sebelum di-develop.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROSES -->
+    <section class="section-sm" id="proses" style="background:var(--bg-2);border-top:1px solid var(--border);">
+        <div class="container">
+            <div style="text-align:center;max-width:600px;margin:0 auto 80px;">
+                <div class="reveal reveal-up" style="display:flex;flex-direction:column;align-items:center;">
+                    <span class="accent-line"></span>
+                </div>
+                <h2 class="t-h1 reveal reveal-up d-1">Cara kami bekerja.</h2>
+                <p class="t-subtitle reveal reveal-up d-2" style="margin-top:12px;">Transparan dari awal sampai akhir. Kamu lihat progress setiap tahap, tanpa drama, tanpa kejutan.</p>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;">
+                <div class="reveal reveal-up" style="padding:36px 28px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);position:relative;">
+                    <div style="font-size:2.5rem;font-weight:900;color:var(--accent);opacity:0.15;position:absolute;top:20px;right:24px;line-height:1;">01</div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" style="margin-bottom:24px;"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/></svg>
+                    <h3 class="t-h3" style="margin-bottom:6px;">Konsultasi & Riset</h3>
+                    <p class="t-small">Kami dengar dulu kebutuhan kamu, analisis kompetitor, dan kasih rekomendasi yang tepat. Gratis, tanpa tekanan.</p>
+                </div>
+                <div class="reveal reveal-up d-1" style="padding:36px 28px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);position:relative;">
+                    <div style="font-size:2.5rem;font-weight:900;color:var(--accent);opacity:0.15;position:absolute;top:20px;right:24px;line-height:1;">02</div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" style="margin-bottom:24px;"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    <h3 class="t-h3" style="margin-bottom:6px;">Desain & Bangun</h3>
+                    <p class="t-small">Tim kami buat desain dan develop websitenya. Kamu bisa lihat progress real-time dan kasih feedback langsung.</p>
+                </div>
+                <div class="reveal reveal-up d-2" style="padding:36px 28px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);position:relative;">
+                    <div style="font-size:2.5rem;font-weight:900;color:var(--accent);opacity:0.15;position:absolute;top:20px;right:24px;line-height:1;">03</div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" style="margin-bottom:24px;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    <h3 class="t-h3" style="margin-bottom:6px;">Launch & Tumbuh</h3>
+                    <p class="t-small">Website live. Kami bantu optimasi dan maintenance. Fokus kamu tinggal jalanin bisnis, urusan teknis biar kami yang urus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section-sm" id="stack" style="border-top:1px solid var(--border);overflow:hidden;">
+        <div class="container">
+            <div style="text-align:center;max-width:600px;margin:0 auto 60px;">
+                <div class="reveal reveal-up" style="display:flex;flex-direction:column;align-items:center;">
+                    <span class="accent-line"></span>
+                </div>
+                <h2 class="t-h1 reveal reveal-up d-1">Teknologi yang kami pakai.</h2>
+                <p class="t-subtitle reveal reveal-up d-2" style="margin-top:12px;">Dari frontend sampai hosting, kami pake teknologi teruji biar hasilnya maksimal dan tahan lama.</p>
+            </div>
+        </div>
+        <div class="stack-wrapper">
+            <div class="stack-track">
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 19V5h4l6 12V5h4v14h-4l-6-12v12z"/></svg></div>
+                    <div class="stack-item-name">Next.js</div>
+                    <div class="stack-item-desc">React framework</div>
+                </div>
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(-60 12 12)"/></svg></div>
+                    <div class="stack-item-name">React</div>
+                    <div class="stack-item-desc">UI library</div>
+                </div>
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 21h20z"/><path d="M12 8l4 10H8z"/></svg></div>
+                    <div class="stack-item-name">Vue.js</div>
+                    <div class="stack-item-desc">Frontend framework</div>
+                </div>
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L3 21h18z"/><circle cx="12" cy="14" r="3" fill="var(--bg)"/><path d="M12 7l-2 5h4z"/></svg></div>
+                    <div class="stack-item-name">Astro</div>
+                    <div class="stack-item-desc">Static site builder</div>
+                </div>
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 20L12 4l8 16z"/><path d="M8 16h8"/></svg></div>
+                    <div class="stack-item-name">Supabase</div>
+                    <div class="stack-item-desc">Backend &amp; database</div>
+                </div>
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4 20V4h16v4H8v2h12v4H8v2h12v4z"/></svg></div>
+                    <div class="stack-item-name">Laravel</div>
+                    <div class="stack-item-desc">PHP framework</div>
+                </div>
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6L4 12l6 6"/><path d="M14 6l6 6-6 6"/></svg></div>
+                    <div class="stack-item-name">PHP</div>
+                    <div class="stack-item-desc">Server language</div>
+                </div>
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v11c0 2 3 3.5 7 3.5s7-1.5 7-3.5V5"/><path d="M5 10.5c0 2 3 3.5 7 3.5s7-1.5 7-3.5"/></svg></div>
+                    <div class="stack-item-name">MySQL</div>
+                    <div class="stack-item-desc">Relational database</div>
+                </div>
+                <div class="stack-item">
+                    <div class="stack-item-icon" style="color:var(--accent);background:var(--accent-dim);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 8c0-2.5-2-4-5-4S7 5.5 7 8c0 2.5 2 3.5 5 4s5 1.5 5 4-2 4-5 4-5-1.5-5-4"/></svg></div>
+                    <div class="stack-item-name">SQLite</div>
+                    <div class="stack-item-desc">Embedded database</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANGKA -->
+    <section class="section-sm" id="angka" style="border-top:1px solid var(--border);">
+        <div class="container">
+            <div class="stats-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center;">
+                <div class="reveal reveal-up">
+                    <div class="counter" data-target="50" data-suffix="+" style="font-size:3rem;font-weight:900;color:var(--accent);letter-spacing:-0.03em;">50+</div>
+                    <div class="t-small" style="margin-top:4px;">Proyek selesai</div>
+                </div>
+                <div class="reveal reveal-up d-1">
+                    <div class="counter" data-target="98" data-suffix="%" style="font-size:3rem;font-weight:900;color:var(--accent);letter-spacing:-0.03em;">98%</div>
+                    <div class="t-small" style="margin-top:4px;">Klien puas</div>
+                </div>
+                <div class="reveal reveal-up d-2">
+                    <div class="counter" data-target="3" data-suffix="+" style="font-size:3rem;font-weight:900;color:var(--accent);letter-spacing:-0.03em;">3+</div>
+                    <div class="t-small" style="margin-top:4px;">Tahun aktif</div>
+                </div>
+                <div class="reveal reveal-up d-3">
+                    <div class="counter" data-target="100" data-suffix="%" style="font-size:3rem;font-weight:900;color:var(--accent);letter-spacing:-0.03em;">100%</div>
+                    <div class="t-small" style="margin-top:4px;">Custom dari nol</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="section-sm" id="keunggulan" style="border-top:1px solid var(--border);">
+        <div class="container">
+            <div style="text-align:center;max-width:600px;margin:0 auto 80px;">
+                <div class="reveal reveal-up" style="display:flex;flex-direction:column;align-items:center;">
+                    <span class="accent-line"></span>
+                </div>
+                <h2 class="t-h1 reveal reveal-up d-1">Kenapa pilih <span class="brand">web</span><span class="brand-a">kalcer</span>?</h2>
+                <p class="t-subtitle reveal reveal-up d-2" style="margin-top:12px;">Bukan cuma bikin website. Kami pastiin setiap detail berfungsi dan berdampak buat bisnis kamu.</p>
+            </div>
+            <div id="keunggulan-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+                <div class="reveal reveal-up" style="padding:32px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);">
+                    <div style="width:40px;height:40px;border-radius:var(--radius);background:var(--accent-dim);display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="t-h3" style="margin-bottom:6px;">100% Custom Code</h3>
+                    <p class="t-small">Tidak ada template atau page builder. Setiap baris kode ditulis manual dari nol. Hasilnya ringan, cepat, dan bebas bloat.</p>
+                </div>
+                <div class="reveal reveal-up d-1" style="padding:32px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);">
+                    <div style="width:40px;height:40px;border-radius:var(--radius);background:var(--accent-dim);display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3 class="t-h3" style="margin-bottom:6px;">Transparan Sepenuhnya</h3>
+                    <p class="t-small">Kamu bisa lihat progress real-time, akses langsung ke project, dan tau persis apa yang dikerjakan. No black box, no drama.</p>
+                </div>
+                <div class="reveal reveal-up d-2" style="padding:32px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);">
+                    <div style="width:40px;height:40px;border-radius:var(--radius);background:var(--accent-dim);display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h3 class="t-h3" style="margin-bottom:6px;">Cepat & Ringan</h3>
+                    <p class="t-small">Optimasi performa dari awal: gambar di-compress, kode minimalis, hosting cepet. Target loading di bawah 3 detik.</p>
+                </div>
+                <div class="reveal reveal-up d-3" style="padding:32px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);">
+                    <div style="width:40px;height:40px;border-radius:var(--radius);background:var(--accent-dim);display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3 class="t-h3" style="margin-bottom:6px;">Support 24/7</h3>
+                    <p class="t-small">Kalo ada masalah atau bingung tinggal chat via WhatsApp. Respon cepat, nggak pake sistem tiket yang lama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="section-sm" id="testimoni" style="border-top:1px solid var(--border);">
+        <div class="container">
+            <div class="reveal reveal-up" style="margin-bottom:60px;">
+                <span class="accent-line"></span>
+                <h2 class="t-h1">Dengar dari klien kami.</h2>
+                <p class="t-body reveal reveal-up d-1" style="margin-top:8px;">Mereka udah rasain langsung. Sekarang giliran kamu.</p>
+            </div>
+            <div class="reveal reveal-up" style="display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;transition-delay:0.4s;">
+                <div class="reveal reveal-up" style="flex:0 0 400px;scroll-snap-align:start;padding:36px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent)" opacity="0.2" style="margin-bottom:20px;"><path d="M3 21c3 0 7-1 7-8V5c0-1.5-.5-2-2-2H4c-1.5 0-2 .5-2 2v7c0 1.5.5 2 2 2c0 3.5 1 5 3 6v-2zm14 0c3 0 7-1 7-8V5c0-1.5-.5-2-2-2h-4c-1.5 0-2 .5-2 2v7c0 1.5.5 2 2 2c0 3.5 1 5 3 6v-2z"/></svg>
+                    <p style="font-size:0.95rem;line-height:1.7;color:var(--fg-2);margin-bottom:24px;">"Pelayanannya cepat dan desainnya sesuai banget sama brand kami. Responnya juga selalu cepat setiap kali ada request revisi."</p>
+                    <div style="display:flex;align-items:center;gap:12px;padding-top:20px;border-top:1px solid var(--border);">
+                        <div style="width:36px;height:36px;border-radius:50%;background:var(--accent-dim);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;font-size:0.8rem;">AP</div>
+                        <div>
+                            <div style="font-weight:600;font-size:0.85rem;">Andi Pratama</div>
+                            <div class="t-small">Owner Batik Nusantara</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-up d-1" style="flex:0 0 400px;scroll-snap-align:start;padding:36px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent)" opacity="0.2" style="margin-bottom:20px;"><path d="M3 21c3 0 7-1 7-8V5c0-1.5-.5-2-2-2H4c-1.5 0-2 .5-2 2v7c0 1.5.5 2 2 2c0 3.5 1 5 3 6v-2zm14 0c3 0 7-1 7-8V5c0-1.5-.5-2-2-2h-4c-1.5 0-2 .5-2 2v7c0 1.5.5 2 2 2c0 3.5 1 5 3 6v-2z"/></svg>
+                    <p style="font-size:0.95rem;line-height:1.7;color:var(--fg-2);margin-bottom:24px;">"Prosesnya jelas dari awal, harga transparan, hasilnya memuaskan. Bisnis kami makin dikenal setelah punya website profesional."</p>
+                    <div style="display:flex;align-items:center;gap:12px;padding-top:20px;border-top:1px solid var(--border);">
+                        <div style="width:36px;height:36px;border-radius:50%;background:var(--accent-dim);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;font-size:0.8rem;">SR</div>
+                        <div>
+                            <div style="font-weight:600;font-size:0.85rem;">Siti Rahmawati</div>
+                            <div class="t-small">Founder StartupTech.id</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal reveal-up d-2" style="flex:0 0 400px;scroll-snap-align:start;padding:36px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent)" opacity="0.2" style="margin-bottom:20px;"><path d="M3 21c3 0 7-1 7-8V5c0-1.5-.5-2-2-2H4c-1.5 0-2 .5-2 2v7c0 1.5.5 2 2 2c0 3.5 1 5 3 6v-2zm14 0c3 0 7-1 7-8V5c0-1.5-.5-2-2-2h-4c-1.5 0-2 .5-2 2v7c0 1.5.5 2 2 2c0 3.5 1 5 3 6v-2z"/></svg>
+                    <p style="font-size:0.95rem;line-height:1.7;color:var(--fg-2);margin-bottom:24px;">"Landing page-nya berkonversi tinggi. Pesanan naik signifikan setelah website jadi. Recommended banget untuk teman-teman pebisnis."</p>
+                    <div style="display:flex;align-items:center;gap:12px;padding-top:20px;border-top:1px solid var(--border);">
+                        <div style="width:36px;height:36px;border-radius:50%;background:var(--accent-dim);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;font-size:0.8rem;">DF</div>
+                        <div>
+                            <div style="font-weight:600;font-size:0.85rem;">Dimas Firmansyah</div>
+                            <div class="t-small">Owner Warung Makmur</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HARGA -->
+    <section class="section-sm" id="harga" style="border-top:1px solid var(--border);">
+        <div class="container">
+            <div style="text-align:center;max-width:550px;margin:0 auto 64px;">
+                <div class="reveal reveal-up" style="display:flex;flex-direction:column;align-items:center;">
+                    <span class="accent-line"></span>
+                </div>
+                <h2 class="t-h1 reveal reveal-up d-1">Investasi yang <span style="color:var(--accent);">transparan</span>.</h2>
+                <p class="t-subtitle reveal reveal-up d-2" style="margin-top:12px;">Semua paket include domain, hosting, SSL, dan support teknis. No hidden fee.</p>
+            </div>
+            <div id="harga-container" class="reveal reveal-up" style="max-width:520px;margin:0 auto;">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <div style="font-size:0.9rem;color:var(--fg-3);">Muat harga...</div>
+                </div>
+            </div>
+            <div class="reveal reveal-up d-2" style="text-align:center;margin-top:32px;">
+                <a href="/package" class="btn btn-ghost">Lihat Paket Lainnya →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-sm" id="faq" style="background:var(--bg-2);border-top:1px solid var(--border);">
+        <div class="container">
+            <div class="reveal reveal-up" style="margin-bottom:48px;">
+                <span class="accent-line"></span>
+                <h2 class="t-h1">Pertanyaan umum.</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 48px;">
+                <div>
+                    <div class="reveal reveal-up" style="border-bottom:1px solid var(--border);">
+                        <button class="faq-q" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500;font-size:0.95rem;text-align:left;color:var(--fg);transition:color 0.2s;">
+                            Apakah saya harus beli domain dan hosting sendiri?
+                            <svg class="faq-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transition:transform 0.3s var(--ease);flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease);">
+                            <p class="t-small" style="padding-bottom:20px;line-height:1.7;">Tidak perlu. Semua paket kami udah include domain dan hosting gratis 1 tahun. Tinggal pilih paket, urusan teknis biar kami yang handle.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-1" style="border-bottom:1px solid var(--border);">
+                        <button class="faq-q" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500;font-size:0.95rem;text-align:left;color:var(--fg);transition:color 0.2s;">
+                            Berapa lama proses pengerjaannya?
+                            <svg class="faq-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transition:transform 0.3s var(--ease);flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease);">
+                            <p class="t-small" style="padding-bottom:20px;line-height:1.7;">Landing page 3-5 hari kerja. Company profile 7-14 hari. Toko online 14-30 hari. Tergantung kompleksitas dan seberapa cepat feedback dari kamu.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-2" style="border-bottom:1px solid var(--border);">
+                        <button class="faq-q" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500;font-size:0.95rem;text-align:left;color:var(--fg);transition:color 0.2s;">
+                            Apakah desainnya bisa saya tentukan?
+                            <svg class="faq-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transition:transform 0.3s var(--ease);flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease);">
+                            <p class="t-small" style="padding-bottom:20px;line-height:1.7;">Tentu! Semua website kami buat dari nol, bukan template. Kamu bebas request warna, layout, font, dan fitur. Kami juga kasih rekomendasi biar hasilnya maksimal.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-3" style="border-bottom:1px solid var(--border);">
+                        <button class="faq-q" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500;font-size:0.95rem;text-align:left;color:var(--fg);transition:color 0.2s;">
+                            Ada garansi revisi?
+                            <svg class="faq-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transition:transform 0.3s var(--ease);flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease);">
+                            <p class="t-small" style="padding-bottom:20px;line-height:1.7;">Ya. Semua paket include garansi revisi sampe kamu puas. Kami juga sediakan layanan maintenance bulanan kalo butuh update konten atau fitur tambahan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="reveal reveal-up d-1" style="border-bottom:1px solid var(--border);">
+                        <button class="faq-q" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500;font-size:0.95rem;text-align:left;color:var(--fg);transition:color 0.2s;">
+                            Saya gak punya konten, gimana?
+                            <svg class="faq-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transition:transform 0.3s var(--ease);flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease);">
+                            <p class="t-small" style="padding-bottom:20px;line-height:1.7;">Tenang aja. Tim kami siap bantu buatin konten, ambilin foto, dan nulis teks buat website kamu. Tinggal ceritain aja bisnis kamu, sisanya kami urus.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-2" style="border-bottom:1px solid var(--border);">
+                        <button class="faq-q" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500;font-size:0.95rem;text-align:left;color:var(--fg);transition:color 0.2s;">
+                            Cara pesannya gimana?
+                            <svg class="faq-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transition:transform 0.3s var(--ease);flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease);">
+                            <p class="t-small" style="padding-bottom:20px;line-height:1.7;">Tinggal klik tombol Hubungi Kami atau Mulai Konsultasi, nanti kami chat via WhatsApp. Konsultasi pertama gratis tanpa komitmen. Kami bantu tentuin paket yang pas buat kamu.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-3" style="border-bottom:1px solid var(--border);">
+                        <button class="faq-q" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500;font-size:0.95rem;text-align:left;color:var(--fg);transition:color 0.2s;">
+                            Apakah website saya bakal cepat?
+                            <svg class="faq-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transition:transform 0.3s var(--ease);flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease);">
+                            <p class="t-small" style="padding-bottom:20px;line-height:1.7;">Pasti. Kami optimasi performa, pake hosting cepat, dan compress semua gambar. Target loading di bawah 3 detik. Website cepat bikin pengunjung betah dan SEO lebih baik.</p>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-up d-4">
+                        <button class="faq-q" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-weight:500;font-size:0.95rem;text-align:left;color:var(--fg);transition:color 0.2s;">
+                            Kalau ada masalah setelah jadi, gimana?
+                            <svg class="faq-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transition:transform 0.3s var(--ease);flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease);">
+                            <p class="t-small" style="padding-bottom:20px;line-height:1.7;">Kami support 24/7 lewat WhatsApp. Kalo ada error atau butuh bantuan tinggal chat aja. Untuk maintenance rutin dan update konten, ada layanan bulanan yang bisa kamu pilih.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="kontak" style="display:flex;align-items:center;min-height:80dvh;border-top:1px solid var(--border);">
+        <div class="container" style="text-align:center;">
+            <div class="reveal reveal-up">
+                <span class="accent-line" style="margin:0 auto 20px;"></span>
+            </div>
+            <h2 class="t-display reveal reveal-up d-1" style="margin-bottom:20px;">
+                Siap bikin website<br>
+                <span style="color:var(--accent);">impian kamu?</span>
+            </h2>
+            <p class="t-subtitle reveal reveal-up d-2" style="max-width:480px;margin:0 auto 40px;">
+                Konsultasi pertama gratis, tanpa komitmen. Ceritain aja kebutuhan kamu - kami bakal kasih solusi, estimasi harga, dan timeline yang realistis.
+            </p>
+            <div class="reveal reveal-up d-3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <a id="wa-link" href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="btn btn-solid">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Hubungi via WhatsApp
+                </a>
+                <a id="email-link" href="mailto:hello@webkalcer.com" class="btn btn-ghost">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Kirim Email
+                </a>
+            </div>
+            <p class="t-small reveal reveal-up d-4" style="margin-top:28px;">Respon cepat, biasanya dalam 5 menit</p>
+        </div>
+    </section>
+
+    <!-- Page-specific: load featured package -->
+    <script>
+        // Load featured package for Harga section
+        async function loadHargaPackage() {
+            const container = document.getElementById('harga-container');
+            if (!container) return;
+            try {
+                const res = await fetch(`${window.__SUPABASE_URL}/rest/v1/packages?select=*&is_active=eq.true&order=sort_order.asc&limit=1`, {
+                    headers: { apikey: window.__SUPABASE_KEY, Authorization: `Bearer ${window.__SUPABASE_KEY}` }
+                });
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const pkgs = await res.json();
+                if (!pkgs || pkgs.length === 0) {
+                    container.innerHTML = `<p class="t-small" style="text-align:center;color:var(--fg-3);">Belum ada paket tersedia.</p>`;
+                    return;
+                }
+                const p = pkgs[0];
+                const features = Array.isArray(p.features) ? p.features : [];
+                const hasPromo = p.promo && Number(p.promo) > 0;
+                const hasBadge = !!p.badge;
+                const eh = window.__escapeHtml;
+                const fp = window.__formatPrice;
+                container.innerHTML = `
+                    <div style="background:var(--bg-2);border:1px solid ${hasBadge ? 'var(--accent)' : 'var(--border)'};${hasBadge ? 'box-shadow:0 0 0 1px var(--accent),0 12px 48px rgba(245,158,11,0.1);' : ''}border-radius:16px;padding:40px;position:relative;overflow:hidden;">
+                        ${hasBadge ? `
+                        <div style="position:absolute;top:16px;right:-28px;background:var(--accent);color:#0b0b0b;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;padding:4px 40px;transform:rotate(45deg);white-space:nowrap;">${eh(p.badge)}</div>
+                        ` : ''}
+                        <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                            <span style="font-size:1.4rem;">${p.icon || '📦'}</span>
+                            <span class="t-h2">${eh(p.name) || 'Paket'}</span>
+                        </div>
+                        ${p.tagline ? `<p class="t-small" style="margin-bottom:12px;">${eh(p.tagline)}</p>` : ''}
+                        <p class="t-body" style="font-size:0.9rem;margin-bottom:16px;">${eh(p.description) || ''}</p>
+                        ${hasPromo ? `
+                        <div style="display:flex;align-items:baseline;gap:8px;margin:16px 0 4px;">
+                            <div style="font-size:3rem;font-weight:900;color:var(--accent);letter-spacing:-0.03em;line-height:1;">${fp(p.promo)}</div>
+                            <span style="font-size:1rem;color:var(--fg-3);text-decoration:line-through;">${fp(p.price)}</span>
+                        </div>` : `
+                        <div style="font-size:3rem;font-weight:900;color:var(--accent);letter-spacing:-0.03em;line-height:1;margin:16px 0 4px;">${fp(p.price)}</div>`}
+                        ${p.price_note ? `<div class="t-small" style="color:var(--fg-3);">${eh(p.price_note)}</div>` : ''}
+                        ${features.length > 0 ? `
+                        <ul style="display:flex;flex-direction:column;gap:12px;margin-top:24px;margin-bottom:36px;">
+                            ${features.map(f => `
+                            <li style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--fg-2);">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
+                                ${eh(f)}
+                            </li>`).join('')}
+                        </ul>` : ''}
+                        ${p.note ? `<p class="t-small" style="margin-top:16px;font-style:italic;text-align:center;">${eh(p.note)}</p>` : ''}
+                        <a href="#kontak" class="btn ${hasBadge ? 'btn-solid' : 'btn-ghost'}" style="width:100%;justify-content:center;margin-top:28px;">Pilih Paket Ini</a>
+                    </div>
+                `;
+            } catch (err) {
+                console.warn('Harga package fetch failed:', err);
+                container.innerHTML = `<p class="t-small" style="text-align:center;color:var(--fg-3);">Gagal memuat harga.</p>`;
+            }
+        }
+        loadHargaPackage();
+    </script>
+
+</BaseLayout>
