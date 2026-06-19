@@ -574,14 +574,15 @@ const {
 
                 // WhatsApp & Email (page elements)
                 const phone = s.phone || '6285805566344';
+                const phoneWa = phone.replace(/^0/, '62').replace(/^\+/, '');
                 const email = s.email || 'halo@webkalcer.com';
                 const waMsg = encodeURIComponent(s.wa_message || 'Halo kak, saya tertarik dengan layanan webkalcer.com');
 
                 const waLink = document.getElementById('wa-link');
-                if (waLink) waLink.href = `https://wa.me/${phone}?text=${waMsg}`;
+                if (waLink) waLink.href = `https://wa.me/${phoneWa}?text=${waMsg}`;
 
                 const waFloating = document.getElementById('wa-floating');
-                if (waFloating) waFloating.href = `https://wa.me/${phone}?text=${waMsg}`;
+                if (waFloating) waFloating.href = `https://wa.me/${phoneWa}?text=${waMsg}`;
 
                 const emailLink = document.getElementById('email-link');
                 if (emailLink) emailLink.href = `mailto:${email}`;
