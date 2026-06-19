@@ -13,18 +13,47 @@ const {
   canonical = 'https://webkalcer.com/',
   ogUrl = 'https://webkalcer.com/',
 } = Astro.props;
+
+// Fetch SEO settings at BUILD TIME so social media crawlers see the correct OG image
+let buildOgImage = ogImage;
+let buildOgTitle = ogTitle || '';
+let buildOgDesc = ogDesc || '';
+let buildPageTitle = pageTitle;
+let buildPageDesc = pageDesc;
+try {
+  const supaUrl = import.meta.env.PUBLIC_SUPABASE_URL;
+  const supaKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
+  if (supaUrl && supaKey) {
+    const res = await fetch(`${supaUrl}/rest/v1/seo_settings?page=eq.${seoPage}&select=*`, {
+      headers: { apikey: supaKey, Authorization: `Bearer ${supaKey}` }
+    });
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.length > 0) {
+        const s = data[0];
+        if (s.og_image_url) buildOgImage = s.og_image_url;
+        if (s.og_title) buildOgTitle = s.og_title;
+        if (s.og_description) buildOgDesc = s.og_description;
+        if (s.title) buildPageTitle = s.title;
+        if (s.description) buildPageDesc = s.description;
+      }
+    }
+  }
+} catch (e) {
+  // Build-time fetch gagal — pakai default dari props
+}
 ---
 <!DOCTYPE html>
 <html lang="id" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">{pageTitle}</title>
-    <meta id="meta-desc" name="description" content={pageDesc}>
+    <title id="page-title">{buildPageTitle}</title>
+    <meta id="meta-desc" name="description" content={buildPageDesc}>
     <link rel="canonical" href={canonical}>
-    <meta id="og-title" property="og:title" content={ogTitle || pageTitle}>
-    <meta id="og-image" property="og:image" content={ogImage}>
-    <meta id="og-desc" property="og:description" content={ogDesc || pageDesc}>
+    <meta id="og-title" property="og:title" content={buildOgTitle || buildPageTitle}>
+    <meta id="og-image" property="og:image" content={buildOgImage}>
+    <meta id="og-desc" property="og:description" content={buildOgDesc || buildPageDesc}>
     <meta property="og:type" content="website">
     <meta property="og:url" content={ogUrl}>
     <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>🤙</text></svg>">
