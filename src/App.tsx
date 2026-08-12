@@ -776,7 +776,8 @@ function Home() {
             <div className="mt-5 grid gap-2 text-sm text-[hsl(var(--primary-foreground)/.68)]">
               <a href={whatsappLink} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-[hsl(var(--secondary))]"><Phone size={14} /> 0858 0556 6344</a>
               <a href={`mailto:${contactEmail}`} className="flex items-center gap-2 hover:text-[hsl(var(--secondary))]"><Mail size={14} /> {contactEmail}</a>
-              <span className="mt-2 font-mono-custom text-[10px] uppercase tracking-[.06em] text-[hsl(var(--primary-foreground)/.45)]">Sen–Sab 08:00–21:00</span>
+              <span className="mt-2 font-mono-custom text-[10px] uppercase tracking-[.06em] text-[hsl(var(--primary-foreground)/.45)]">Sen–Sab 10.00–18.00</span>
+              <span className="font-mono-custom text-[10px] uppercase tracking-[.06em] text-[hsl(var(--primary-foreground)/.45)]">Denpasar, Bali</span>
             </div>
           </div>
         </div>
