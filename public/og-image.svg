@@ -1,0 +1,27 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#10141D"/>
+
+  <g opacity="0.28" font-family="'Bricolage Grotesque', sans-serif" font-size="130" font-weight="700" fill="#EA6A44">
+    <text x="1130" y="575" text-anchor="end">webkalcer.</text>
+  </g>
+
+  <circle cx="116" cy="118" r="36" fill="none" stroke="#F5F1E8" stroke-width="3"/>
+  <rect x="104" y="106" width="24" height="24" fill="#C9E560" transform="rotate(45 116 118)"/>
+  <circle cx="148" cy="82" r="10" fill="#EA6A44"/>
+  <text x="172" y="136" font-family="'Bricolage Grotesque', sans-serif" font-size="56" font-weight="700" fill="#F5F1E8">webkalcer<tspan fill="#EA6A44">.</tspan></text>
+
+  <text x="80" y="240" font-family="'Bricolage Grotesque', sans-serif" font-size="76" font-weight="700" fill="#F5F1E8">Jasa Pembuatan Website</text>
+  <text x="80" y="316" font-family="'Instrument Serif', 'Times New Roman', serif" font-style="italic" font-size="76" fill="#EA6A44">Profesional bisnis naik kelas.</text>
+
+  <text x="80" y="386" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" fill="#B9C0CF">Kustom dari nol, cepat &amp; teruji — landing page, company profile, UI/UX.</text>
+  <text x="80" y="430" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" fill="#B9C0CF">Termasuk domain, hosting &amp; SSL selama 1 tahun.</text>
+
+  <rect x="80" y="456" width="330" height="72" rx="36" fill="#C9E560"/>
+  <text x="124" y="506" font-family="'Bricolage Grotesque', sans-serif" font-size="34" font-weight="700" fill="#10141D">Mulai</text>
+  <text x="228" y="506" font-family="'Bricolage Grotesque', sans-serif" font-size="34" font-weight="700" fill="#10141D">Rp 450K</text>
+  <text x="438" y="501" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" fill="#8B93A5" text-decoration="line-through" stroke="#8B93A5" stroke-width="1.5">Rp 1JT</text>
+
+  <line x1="80" y1="562" x2="1120" y2="562" stroke="#2A3040" stroke-width="2"/>
+  <text x="80" y="600" font-family="'DM Mono', monospace" font-size="22" fill="#B9C0CF">STUDIO DIGITAL INDONESIA · 3+ TAHUN · 50+ PROYEK</text>
+  <text x="1120" y="600" text-anchor="end" font-family="'DM Mono', monospace" font-size="22" fill="#B9C0CF">webkalcer.com</text>
+</svg>
