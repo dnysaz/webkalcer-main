@@ -150,7 +150,7 @@ const packageFeatures = [
   'Landing page 1 halaman, desain profesional',
   'Tombol kontak WhatsApp, Instagram & Email',
   'Free domain .my.id / .web.id / .site selama 1 tahun',
-  'Upgrade domain .com cuma nambah Rp 99.000',
+  'Upgrade domain .com cuma nambah Rp 150.000',
   'Free modern hosting—cepat & stabil',
   'Free SSL biar website aman',
   'Responsive—mulus di HP & laptop',
