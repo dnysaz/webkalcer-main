@@ -620,7 +620,7 @@ function Home() {
         </section>
 
         <section id="pricing" className="border-t border-[hsl(var(--foreground)/.22)] py-24 md:py-36">
-          <div className="container-wide">
+          <div className="container-wide max-w-xl mx-auto">
             <div className="reveal">
               <p className="eyebrow">05 / Paket & harga</p>
               <h2 className="display-lg mt-8 max-w-[580px]">
