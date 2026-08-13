@@ -626,7 +626,7 @@ function Home() {
               <h2 className="display-lg mt-8 max-w-7xl">
                 Investasi yang <span className="serif-italic text-[hsl(var(--accent))]">transparan.</span>
               </h2>
-              <p className="mt-8 max-w-[360px] leading-relaxed text-[hsl(var(--foreground)/.66)]">
+              <p className="mt-8 max-w-7xl leading-relaxed text-[hsl(var(--foreground)/.66)]">
                 Semua paket include domain, hosting, SSL, dan support teknis. No hidden fee.
               </p>
             </div>
