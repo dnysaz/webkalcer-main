@@ -623,7 +623,7 @@ function Home() {
           <div className="container-wide">
             <div className="reveal">
               <p className="eyebrow">05 / Paket & harga</p>
-              <h2 className="display-lg mt-8 max-w-[580px]">
+              <h2 className="display-lg mt-8 max-w-7xl">
                 Investasi yang <span className="serif-italic text-[hsl(var(--accent))]">transparan.</span>
               </h2>
               <p className="mt-8 max-w-[360px] leading-relaxed text-[hsl(var(--foreground)/.66)]">
