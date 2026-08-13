@@ -50,6 +50,9 @@ const services = [
     description:
       'Halaman satu halaman yang fokus ke konversi—cocok untuk campaign, produk baru, atau personal branding. Desain clean, loading cepat, dan bikin pengunjung langsung action.',
     tags: ['Konversi', 'Campaign', 'Personal branding'],
+    priceLabel: 'Mulai dari',
+    price: '450.000',
+    priceStrike: '1.000.000',
   },
   {
     number: '02',
@@ -57,13 +60,19 @@ const services = [
     description:
       'Website multi-halaman yang menceritakan brand kamu secara profesional—dari visi misi, portfolio, sampai tim. Biar calon klien percaya dan yakin memilih kamu.',
     tags: ['Brand story', 'Portfolio', 'Multi-halaman'],
+    priceLabel: 'Mulai dari',
+    price: '1.500.000',
+    priceStrike: '3.000.000',
   },
   {
     number: '03',
-    name: 'UI/UX Design',
+    name: 'Website Kustom',
     description:
-      'Desain antarmuka yang intuitif dan engaging—mulai dari wireframe, prototype, sampai visual final. Fondasi desain yang matang sebelum di-develop.',
-    tags: ['Wireframe', 'Prototype', 'Visual design'],
+      'Website yang dibangun dari nol sesuai kebutuhan unik bisnis kamu—mulai dari konsultasi & riset, desain, develop, sampai launch. Kombinasi landing page, company profile, dan fitur custom tanpa batas.',
+    tags: ['100% Custom', 'Fitur bebas', 'Skalabel'],
+    priceLabel: 'Mulai dari',
+    price: '4.500.000',
+    priceStrike: '6.000.000',
   },
 ];
 
@@ -449,15 +458,28 @@ function Home() {
                   <span className="eyebrow text-[hsl(var(--accent))]">{service.number}</span>
                   <h3 className="text-3xl font-semibold tracking-[-.06em] md:text-5xl">{service.name}</h3>
                   <p className="max-w-[440px] text-base leading-relaxed text-[hsl(var(--foreground)/.68)]">{service.description}</p>
-                  <div className="flex flex-wrap gap-2 md:justify-end">
-                    {service.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-full border border-[hsl(var(--foreground)/.28)] px-3 py-1.5 font-mono-custom text-[10px] uppercase text-[hsl(var(--foreground)/.62)]"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                  <div className="flex flex-col items-start gap-4 md:items-end">
+                    <div className="flex flex-wrap gap-2 md:justify-end">
+                      {service.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-[hsl(var(--foreground)/.28)] px-3 py-1.5 font-mono-custom text-[10px] uppercase text-[hsl(var(--foreground)/.62)]"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="text-left md:text-right">
+                      <p className="font-mono-custom text-[10px] uppercase tracking-[.1em] text-[hsl(var(--foreground)/.5)]">
+                        {service.priceLabel}
+                      </p>
+                      <p className="mt-1 text-2xl font-semibold tracking-[-.04em] text-[hsl(var(--foreground))]">
+                        <span className="font-mono-custom">Rp</span> {service.price}
+                      </p>
+                      <p className="mt-1 font-mono-custom text-sm text-[hsl(var(--foreground)/.45)] line-through">
+                        Rp {service.priceStrike}
+                      </p>
+                    </div>
                   </div>
                 </article>
               ))}
