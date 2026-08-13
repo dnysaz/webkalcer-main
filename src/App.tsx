@@ -620,7 +620,7 @@ function Home() {
         </section>
 
         <section id="pricing" className="border-t border-[hsl(var(--foreground)/.22)] py-24 md:py-36">
-          <div className="container-wide max-w-xl mx-auto">
+          <div className="container-wide">
             <div className="reveal">
               <p className="eyebrow">05 / Paket & harga</p>
               <h2 className="display-lg mt-8 max-w-[580px]">
@@ -632,7 +632,7 @@ function Home() {
                 Semua paket include domain, hosting, SSL, dan support teknis. No hidden fee.
               </p>
             </div>
-            <div className="price-card mt-16 relative overflow-hidden border border-[hsl(var(--foreground)/.28)] bg-[hsl(var(--primary))] p-7 text-[hsl(var(--primary-foreground))] md:p-12 reveal">
+            <div className="price-card mt-16 relative mx-auto max-w-xl overflow-hidden border border-[hsl(var(--foreground)/.28)] bg-[hsl(var(--primary))] p-7 text-[hsl(var(--primary-foreground))] md:p-12 reveal">
               <div className="absolute right-0 top-0 bg-[hsl(var(--accent))] px-4 py-2 font-mono-custom text-[10px] uppercase tracking-[.08em] text-[hsl(var(--foreground))]">
                 Paling kalcer
               </div>
@@ -674,7 +674,7 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="mt-6 flex flex-col items-start justify-between gap-5 border border-[hsl(var(--foreground)/.28)] bg-[hsl(var(--secondary))] p-6 md:flex-row md:items-center md:p-7 reveal">
+            <div className="mt-6 flex mx-auto max-w-xl flex-col items-start justify-between gap-5 border border-[hsl(var(--foreground)/.28)] bg-[hsl(var(--secondary))] p-6 md:flex-row md:items-center md:p-7 reveal">
               <div>
                 <p className="text-xl font-semibold tracking-[-.04em]">
                   Ingin website custom dengan banyak halaman?
