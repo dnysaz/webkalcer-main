@@ -621,14 +621,16 @@ function Home() {
 
         <section id="pricing" className="border-t border-[hsl(var(--foreground)/.22)] py-24 md:py-36">
           <div className="container-wide">
-            <div className="reveal">
-              <p className="eyebrow">05 / Paket & harga</p>
-              <h2 className="display-lg mt-8 max-w-[580px]">
-                Investasi yang
-                <br />
-                <span className="serif-italic text-[hsl(var(--accent))]">transparan.</span>
-              </h2>
-              <p className="mt-8 max-w-[360px] leading-relaxed text-[hsl(var(--foreground)/.66)]">
+            <div className="reveal md:flex md:items-end md:justify-between md:gap-12">
+              <div>
+                <p className="eyebrow">05 / Paket & harga</p>
+                <h2 className="display-lg mt-8 max-w-[580px]">
+                  Investasi yang
+                  <br />
+                  <span className="serif-italic text-[hsl(var(--accent))]">transparan.</span>
+                </h2>
+              </div>
+              <p className="mt-8 max-w-[360px] leading-relaxed text-[hsl(var(--foreground)/.66)] md:mt-0">
                 Semua paket include domain, hosting, SSL, dan support teknis. No hidden fee.
               </p>
             </div>
