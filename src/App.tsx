@@ -3,7 +3,10 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import Faq from '@/pages/faq';
 import NotFound from '@/pages/not-found';
+import RefundPolicy from '@/pages/refund-policy';
+import SyaratKetentuan from '@/pages/syarat-ketentuan';
 import {
   ArrowDownRight,
   ArrowRight,
@@ -23,6 +26,7 @@ import {
   X,
 } from 'lucide-react';
 import {
+  Link,
   Route,
   Switch,
   useLocation,
@@ -803,7 +807,7 @@ function Home() {
         </div>
         <div className="container-wide mt-10 flex flex-col justify-between gap-4 border-t border-[hsl(var(--primary-foreground)/.2)] pt-5 font-mono-custom text-[10px] uppercase tracking-[.08em] text-[hsl(var(--primary-foreground)/.48)] md:flex-row">
           <span>© 2026 webkalcer. All rights reserved.</span>
-          <div className="flex gap-5"><a href="#top" onClick={() => scrollTo('top')} className="hover:text-[hsl(var(--secondary))]">Kebijakan Privasi</a><a href="#top" onClick={() => scrollTo('top')} className="hover:text-[hsl(var(--secondary))]">Syarat & Ketentuan</a></div>
+          <div className="flex gap-5"><Link href="/refund-policy" className="hover:text-[hsl(var(--secondary))]">Kebijakan Refund</Link><Link href="/syarat-ketentuan" className="hover:text-[hsl(var(--secondary))]">Syarat & Ketentuan</Link><Link href="/faq" className="hover:text-[hsl(var(--secondary))]">FAQ</Link></div>
         </div>
       </footer>
       <a
@@ -826,6 +830,9 @@ function Router() {
     <RoutedErrorBoundary>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/syarat-ketentuan" component={SyaratKetentuan} />
+        <Route path="/refund-policy" component={RefundPolicy} />
+        <Route path="/faq" component={Faq} />
         <Route component={NotFound} />
       </Switch>
     </RoutedErrorBoundary>
